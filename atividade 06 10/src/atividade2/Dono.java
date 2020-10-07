@@ -1,21 +1,30 @@
-
 package atividade2;
 
-
 public class Dono {
-    
+
     private String nome;
     private int idade;
     private Pet pet;
-    
-    Dono (){
-        
+
+    /** -- não esta sendo usado
+     * construtor Vazio
+     */
+    public Dono() {
+
     }
 
-    public Dono(String nome, int idade) {
+    /**
+     * Construtor COmpleto // não esta sendo usado
+     *
+     * @param nome
+     * @param idade
+     * @param pet
+     */
+    public Dono(String nome, int idade, Pet pet) {
         this.nome = nome;
         this.idade = idade;
-    }  
+        this.pet = pet;
+    }
 
     public String getNome() {
         return nome;
@@ -34,13 +43,11 @@ public class Dono {
     }
 
     public Pet getPet() {
-        return pet;
+        return this.pet;
     }
 
     public void setPet(Pet pet) {
         this.pet = pet;
     }
-    
-    
-    
+
 }
