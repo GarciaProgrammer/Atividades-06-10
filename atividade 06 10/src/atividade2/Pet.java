@@ -1,6 +1,6 @@
 package atividade2;
 
-public class Pet {
+public abstract class Pet {
 
     private String nome;
     private String tipo;
@@ -52,6 +52,10 @@ public class Pet {
 
     public void setCor(String cor) {
         this.cor = cor;
+    }
+    
+    public String emiteSom(){
+        return new String("miauuuuu");
     }
 
 }
